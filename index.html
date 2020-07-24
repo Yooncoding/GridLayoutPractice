@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Yoon" />
+  <title>FlexLayoutPractice</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="default.css" />
+  <script src="https://kit.fontawesome.com/5a302792a0.js" crossorigin="anonymous"></script>
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <div class="page">
+    <!-- Header -->
+    <header class="header">
+      <h1>Grid</h1>
+      <form class="search-form">
+        <input type="search" />
+        <input type="submit" value="찾기" />
+      </form>
+      <button class="modal_btn"><i class="far fa-envelope-open"></i></button>
+    </header>
+    <!-- Navbar -->
+    <ul class="navbar">
+      <li class="navbar_item"><a href="#">Home</a></li>
+      <li class="navbar_item"><a href="#">About</a></li>
+      <li class="navbar_item"><a href="#">Product</a></li>
+      <li class="navbar_item"><a href="#">Contact</a></li>
+    </ul>
+    <!-- Center contents -->
+    <section class="center">
+      <ul class="card_list">
+        <li class="card_item">
+          <figure class="card_img" style="background-image: url(images/c++.png)"></figure>
+          <div class="card_desc">
+            C언어를 부분집합으로 갖고 객체 지향 및 일반화 프로그래밍과 같은 멀티 패러다임을 지원하는 프로그래밍 언어이다. 즉, C언어의 문법과 기능을 모두 사용할 수
+            있다. 다만, 오래된 표준은 부분집합으로 갖지 않았던 적도 있다. 1979년에 C언어에서 직접적으로 파생된 C with Classes라는 이름의 언어로 시작되었다가, 1983년에 지금의 이름을
+            갖게 되었다.
+          </div>
+        </li>
+        <li class="card_item">
+          <figure class="card_img" style="background-image: url(images/css.png)"></figure>
+          <div class="card_desc">
+            HTML 등의 마크업 언어로 작성된 문서가 실제로 웹사이트에 표현되는 방법을 정해주는 언어.
+            CSS의 C가 Cascading의 약자인데, 이는 상위 요소의 스타일 속성을 자손 요소들에게 상속시켜주는 모습이 DOM 트리구조에서 마치 폭포수처럼 내려가는 모습을 닮았기 때문이다.
+          </div>
+        </li>
+        <li class="card_item">
+          <figure class="card_img" style="background-image: url(images/github.png)"></figure>
+          <div class="card_desc">
+            대표적인 무료 Git 저장소. 2008년 공개했다. Git 호스팅 기능 덕분에 GitHub는 자유 소프트웨어의 성지로 떠올랐다. 본사는 미국 샌프란시스코에 있다. 경쟁사 SourceForge는
+            애드웨어, 해킹, 바이러스 등등의 문제로 많은 개발자들의 신뢰를 잃어 사실상 망했으며, 대부분의 프로젝트가 GitHub 쪽으로 이주하게 됐다. 마스코트는 고양이와 문어를 합친 모습의
+            Octocat이다. 새 모양 실루엣의 트위터 로고가 마음에 든 깃허브 관리자가 그 디자이너에게 제작을 의뢰했다고 한다.
+          </div>
+        </li>
+        <li class="card_item">
+          <figure class="card_img" style="background-image: url(images/javascript.png)"></figure>
+          <div class="card_desc">
+            프로토타입기반의 객체지향 프로그래밍 언어로, 스크립트 언어에 해당된다. 특수한 목적이 아닌 이상 모든 웹 브라우저에 인터프리터가 내장되어 있다. 오늘날
+            HTML, CSS와 함께 웹을 구성하는 요소 중 하나다. HTML이 웹 페이지의 기본 구조를 담당하고, CSS가 디자인을 담당한다면 JavaScript는 클라이언트 단에서 웹 페이지가 동작하는
+            것을 담당한다. 웹 페이지를 자동차에 비유하자면, HTML은 자동차의 뼈대, CSS는 자동차의 외관, JavaScript는 자동차의 동력이라고 볼 수 있다.
+          </div>
+        </li>
+        <li class="card_item">
+          <figure class="card_img" style="background-image: url(images/linux.png)"></figure>
+          <div class="card_desc">
+            커널의 일종인 리눅스 커널, 또는 리눅스 커널을 사용하는 운영 체제를 가리키는 말이기도 하다. GNU 쪽 사람들은 리눅스는 커널일 뿐이고, 이 커널을
+            가져다가 GNU 프로그램들을 올려 만든 운영 체제는 GNU/Linux라고 이야기하며 이런 명칭에 민감하게 반응하는 경우도 있다. 소스 코드가 공개되어 있는 대표적인 오픈 소스 소프트웨어다.
+            컴퓨터 역사상 가장 많은 사람이 들어간 오픈 소스 프로젝트이며, 모바일 운영 체제로 유명한 안드로이드가 이것을 기반으로 한다.
+          </div>
+        </li>
+        <li class="card_item">
+          <figure class="card_img" style="background-image: url(images/mysql.png)"></figure>
+          <div class="card_desc">
+            에스큐엘, 혹은 시퀄이라고 읽는다. 구조적 데이터 질의 언어. 데이터베이스에서 자료를 처리하는 용도로 쓰인다.
+            로고는 SQL을 사용하는 회사별로 색상은 다르게 표현된다. 그러나 마크 자체는 원통을 쌓은 모양이 공용으로 쓰인다.
+          </div>
+        </li>
+        <li class="card_item">
+          <figure class="card_img" style="background-image: url(images/node.png)"></figure>
+          <div class="card_desc">
+            2009년 5월 27일 처음 소개된 Node.js는 오픈 소스 JavaScript 엔진인 크롬 V8에 비동기 이벤트 처리 라이브러리인 libuv를 결합한 플랫폼이다. 다시 말해,
+            JavaScript로 브라우저 밖에서 서버를 구축하는 등의 코드를 실행할 수 있게 해주는 런타임 환경이다. Ryan Dahl이 처음 개발했으며,[1] 처음엔 리눅스와 macOS만 지원되었으나
+            2011년 7월에 Windows 버전도 발표되었다.
+          </div>
+        </li>
+        <li class="card_item">
+          <figure class="card_img" style="background-image: url(images/python.png)"></figure>
+          <div class="card_desc">
+            문법이 매우 쉬워서 초보자들이 처음 프로그래밍을 배울 때 추천되는 언어이다. 오죽하면 Python의 별명이 '실행할 수 있는 가짜코드(Executable
+            pseudocode)'일 정도. 실제로도 미국 공과 대학교에서 컴퓨터 프로그래밍 입문 수업으로 Python을 많이 사용하기도 한다. 학습용으로 좋은 언어인 동시에 실사용률과 생산성도 높은 강력한
+            언어인 셈. 즉 접근성과 응용력이 좋다는 게 굉장히 중요하다.배우기도 쉽고 써먹기도 쉽고. Python의 이런 두 마리 토끼는 교육용 프로그래밍 언어인 BASIC이 망했어요 루트를 타게 된
+            결정적인 이유이다. Python은 BASIC과 달리 학교에서 배우고 끝나는 게 아니라 현업에서도 자주 쓰이는 언어이기 때문이다.
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!-- Left Side contents -->
+    <aside class="side left">
+      <ul class="info_list">
+        <li class="info_list_item">
+          프론트엔드 개발자는 백엔드 API에서 가져온 데이터의 출력, 입력을 통한 비지니스 로직 구성과 사용자와 대화하는 사용자 인터페이스 부분을 작업하는 개발자를 말한다.
+        </li>
+        <li class="info_list_item">
+          백엔드의 완전한 분리 구조를 지향하는 업무 스타일의 개발 방식로서 백엔드의 DB와 API서버 개발을 맡는다. 이와 다른 방식의 업무 스타일 직군으로는 웹퍼블리셔(ui개발)와 개발자(서버 개발자)의
+          업무 분리 방식이 있다. 이 경우는 주로 서버사이드가 클라이언트를 감싸는 방식이고, 전반적인 비지니스 로직은 개발자가 맡는다.
+        </li>
+        <li class="info_list_item">
+          프로그램을 만드는 것을 뜻한다. 그리고 여기에서의 프로그램은 대체로 컴퓨터에서 동작하는 프로그램을 말한다. 따라서 프로그래밍이라고 하면 대개 컴퓨터프로그래밍을 뜻한다. 기술을 다루는 기술이라고
+          하기도 한다.
+        </li>
+      </ul>
+      <ul class="user_list friend_list">
+        <li class="user_item friend_item">
+          <figure class="user_photo" style="background-image: url(images/school.png);"></figure>
+          <p class="user_name">
+            Incheon National Univ.
+          </p>
+        </li>
+        <li class="user_item friend_item">
+          <figure class="user_photo" style="background-image: url(images/school.png);"></figure>
+          <p class="user_name">
+            Chistopher Yoon
+          </p>
+        </li>
+      </ul>
+    </aside>
+    <!-- Right Side contents -->
+    <aside class="side right">
+      <ul class="user_list message_list">
+        <li class="user_item message_item">
+          <figure class="user_photo" style="background-image: url(images/경주강아지.JPG);"></figure>
+          <p class="message_content">
+            고려 후기에 무신정권에 대항하는 반란이 일어나고 나서는 3경에서 제외되고 이어서 몽골의 침략으로 황폐화되었다.
+          </p>
+        </li>
+        <li class="user_item message_item">
+          <figure class="user_photo" style="background-image: url(images/경주강아지.JPG);"></figure>
+          <p class="message_content">
+            도로교통에 비해 철도교통이 발달하지 않은 편이었으나, 경부고속철도 신경주역 개통과 함께 서울까지의 소요시간이 2시간 초반대로 단축되었다. 하지만 KTX역인 신경주역은 경주 시내와 차로
+            20~30분 걸린다.
+          </p>
+        </li>
+        <li class="user_item message_item">
+          <figure class="user_photo" style="background-image: url(images/경주강아지.JPG);"></figure>
+          <p class="message_content">
+            경주는 주변도시에 비해 높은 건물이 보이지가 않는데 그 이유가 문화재 보호를 위해 건물고도제한이 걸렸기 때문이다. 다만 앞으로의 경주 발전의 큰 걸림돌이었고 무기등의 발전 및 인구 유입, 생활권
+            보장을 위해 법을 개정했다는 이야기도 있다
+          </p>
+        </li>
+      </ul>
+    </aside>
+  </div>
+  <div class="modal invisible">
+    <div class="dialog">
+      <button class="modal_close_btn">X</button>
+      Flex Layout 연습용 반응형 페이지입니다.
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="footer">
+    Write By. YoonChulJoong
+  </footer>
+  </div>
+</body>
+
+</html>
