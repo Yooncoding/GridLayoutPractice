@@ -1,0 +1,106 @@
+html {
+  font-size: 87.5%;
+  /* 14px */
+  font-family: Roboto, 'Noto Sans KR', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility !important;
+}
+
+body {
+  background: lightgray;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page_header {
+  grid-column: 1/5;
+}
+
+.footer {
+  grid-column: 1/5;
+  padding: 1rem 0 3rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+input[name='sort_control'] {
+  position: absolute;
+  left: -1000rem;
+}
+
+.sort_label {
+  border: 1px solid black;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+:checked+.sort_label {
+  color: white;
+  background: black;
+}
+
+.page_title {
+  font-size: 4rem;
+  font-family: 'Roboto Condensed';
+}
+
+.content {
+  background: white;
+}
+
+.cate_name {
+  padding: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+.music .cate_name {
+  background: crimson;
+}
+
+.game .cate_name {
+  background: limegreen;
+}
+
+.food .cate_name {
+  background: salmon;
+}
+
+.tech .cate_name {
+  background: steelblue;
+}
+
+.content_dialog {
+  padding: 1rem;
+}
+
+.content_title {
+  padding: 1rem;
+}
+
+#radio_sort_category:checked~.music {
+  grid-row: 3/4;
+}
+
+#radio_sort_category:checked~.food {
+  grid-row: 4/5;
+}
+
+#radio_sort_category:checked~.game {
+  grid-row: 5/6;
+}
+
+#radio_sort_category:checked~.tech {
+  grid-row: 6/7;
+}
